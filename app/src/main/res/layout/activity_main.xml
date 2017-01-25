@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C6BA4"
+    tools:context="com.example.thanhvu.giaodienloginfacebook.MainActivity">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/username">
+    <ImageView
+
+        android:src="@drawable/facebook"
+
+        android:id="@+id/face"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        />
+    <EditText
+        android:paddingLeft="20dp"
+        android:id="@+id/username"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="username"
+        android:layout_above="@+id/pass"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:paddingLeft="20dp"
+        android:id="@+id/pass"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+     <Button
+         android:textSize="18dp"
+         android:background="#1b2f53"
+         android:id="@+id/log"
+         android:textStyle="bold"
+         android:text="Log In"
+         android:textColor="#fff"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:layout_below="@id/pass"
+         android:layout_centerInParent="true"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+
+
+
+         />
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/log"
+        android:text="Forgot Password?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
